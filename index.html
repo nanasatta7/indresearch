@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IND_RESEARCH – Knowledge Index (Static)</title>
+
+  <!-- ให้บอท/เอเจนต์สามารถเก็บและติดตามลิงก์ได้ -->
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="ดัชนีลิงก์รายงานอุตสาหกรรม (Static, No-JS). ใช้เป็น Knowledge ให้ Agent ได้โดยตรง." />
+
+  <style>
+    :root { --ink:#111; --muted:#666; --brand:#0b57d0; --bg:#fff; --chip:#eef3ff; }
+    html,body{background:var(--bg);color:var(--ink);margin:0;padding:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,TH Sarabun New,Arial,sans-serif;}
+    header{padding:24px 16px;border-bottom:1px solid #e6e6e6;}
+    h1{margin:0 0 4px;font-size:22px}
+    .sub{color:var(--muted);font-size:14px}
+    main{max-width:880px;margin:0 auto;padding:24px 16px}
+    section{margin:24px 0}
+    h2{font-size:18px;margin:0 0 8px}
+    .chip{display:inline-block;background:var(--chip);color:var(--brand);padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+    ul{margin:8px 0 0 20px}
+    li{margin:6px 0}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .note{color:var(--muted);font-size:13px;margin-top:6px}
+    footer{border-top:1px solid #e6e6e6;padding:16px;color:var(--muted);font-size:13px}
+    code,pre{background:#f7f7f7;border:1px solid #eee;border-radius:6px;padding:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IND_RESEARCH – Knowledge Index (Static)</h1>
+    <div class="sub">แหล่งรวมลิงก์ไฟล์รายงานอุตสาหกรรม (Static/No‑JS) สำหรับ Copilot Agent</div>
+  </header>
+
+  <main>
+    <section aria-labelledby="about">
+      <h2 id="about">เกี่ยวกับหน้านี้</h2>
+      <p>
+        หน้านี้จัดทำเพื่อให้ Copilot Agent เข้าถึง “ลิงก์ไฟล์ปลายทาง” โดยตรง (PDF/HTML/CSV/DOCX)
+        ไม่มีการใช้งานสคริปต์หรือวิดเจ็ต เพื่อให้ Agent อ่าน/สรุป/อ้างอิงได้ทันทีโดยไม่ต้องคลิกลึกหลายชั้น
+      </p>
+      <pre>
+หลักการใช้งาน:
+1) วางเฉพาะลิงก์ไฟล์ที่เป็นสาธารณะ (Public, no-login)
+2) ใช้ลิงก์ตรง (Direct URL) ไปยังไฟล์ปลายทาง
+3) อัปเดตวันที่แก้ไขล่าสุด เพื่อช่วย Agent เลือกเวอร์ชันล่าสุด
+      </pre>
+    </section>
+
+    <section aria-labelledby="energy">
+      <h2 id="energy">พลังงาน / Commodities <span class="chip">อัปเดต: 2026‑02‑06</span></h2>
+      <ul>
+        <li>
+          Coal – K‑Research (2025‑03‑04) – PDF
+          <br />
+          <a href="https://media.settrade.com/settrade/Documents/2025/Mar/20250304-K-Research-Coal-update.pdf" rel="noopener">https://media.settrade.com/settrade/Documents/2025/Mar/20250304-K-Research-Coal-update.pdf</a>
+          <div class="note">คำสำคัญ: ถ่านหิน, ส่งออกอินโดนีเซีย, จีน/อินเดีย, ราคา, ไฟฟ้า</div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="ict">
+      <h2 id="ict">ดิจิทัล/ไอที</h2>
+      <ul>
+        <li>
+          Data Center – K‑Research (2025‑11‑14) – PDF
+          <br />
+          https://media.settrade.com/settrade/Documents/2025/Nov/20251114-K-Research-Data-center-update.pdfhttps://media.settrade.com/settrade/Documents/2025/Nov/20251114-K-Research-Data-center-update.pdf</a>
+          <div class="note">คำสำคัญ: ดาต้าเซ็นเตอร์, ใช้ไฟฟ้าสูง, ระบายความร้อน, คลาวด์</div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="howto">
+      <h2 id="howto">แนวปฏิบัติที่แนะนำ (เพื่อให้ Agent อ่านได้ 100%)</h2>
+      <ul>
+        <li>อย่าใช้ปุ่ม/การฝัง (embed), ตาราง dynamic, หรือคอมโพเนนต์ที่ต้องรัน JavaScript</li>
+        <li>ใช้ข้อความธรรมดา + ลิงก์ตรง (plain text + direct link) เท่านั้น</li>
+        <li>ตั้งไฟล์ปลายทางให้เป็น Public (Anyone with the link)</li>
+        <li>ถ้าต้องการจัดกลุ่ม ให้ใช้หัวข้อ (&lt;h2&gt;) และลิสต์ (&lt;ul&gt;&lt;li&gt;)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 IND_RESEARCH • Static index for Copilot Agent • No JavaScript • Contact: your-email@example.com
+  </footer>
+</body>
+</html>
